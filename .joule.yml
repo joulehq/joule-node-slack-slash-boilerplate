@@ -18,3 +18,6 @@ methods:
       - 401
       - 404
       - 500
+  PUT:
+    status_codes:
+      - 204
