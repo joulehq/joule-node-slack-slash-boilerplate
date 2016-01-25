@@ -6,6 +6,7 @@ main-function: 'handler'
 variables:
   - key
   - foo
+  - another
 methods:
   GET:
     status_codes:
