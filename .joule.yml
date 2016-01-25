@@ -3,6 +3,9 @@ environment: 'master'
 endpoint: 'joule'
 main-file: 'index'
 main-function: 'handler'
+variables:
+  - key
+  - foo
 methods:
   GET:
     status_codes:
@@ -21,6 +24,3 @@ methods:
   PUT:
     status_codes:
       - 204
-variables:
-  - key
-  - foo
