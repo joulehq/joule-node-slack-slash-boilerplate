@@ -21,6 +21,6 @@ methods:
   PUT:
     status_codes:
       - 204
-  variables:
-    - key
-    - foo
+variables:
+  - key
+  - foo
