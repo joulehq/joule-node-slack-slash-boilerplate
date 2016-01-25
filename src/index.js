@@ -8,5 +8,5 @@ console.log('Loading function');
  */
 exports.handler = function(event, context) {
     console.log('Received event:', JSON.stringify(event, null, 2));
-    context.succeed(JSON.stringify({foo:process.env.foo}));
+    context.succeed(JSON.stringify({foo:process.env.foo, key:process.env.key}));
 };
