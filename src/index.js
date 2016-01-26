@@ -15,5 +15,6 @@ exports.handler = function(event, context) {
         context.succeed("That's not a valid token, sir.");
     }
     
-    context.succeed(text.split('').reverse().join(''));
+    //context.succeed(text.split('').reverse().join(''));
+    context.succeed('why');
 };
