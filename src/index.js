@@ -8,5 +8,12 @@ console.log('Loading function');
  */
 exports.handler = function(event, context) {
     console.log('Received event:', JSON.stringify(event, null, 2));
-    context.succeed(JSON.stringify({foo:process.env.foo, key:process.env.key}));
+    var token = event.token;
+    var command = event.command;
+    var text = event.text;
+    if(token !== process.env.token) {
+        echo "That's not a valid token, sir."
+    }
+    
+    context.succeed(text.split('').reverse().join(''));
 };
