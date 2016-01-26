@@ -4,17 +4,11 @@ endpoint: 'joule'
 main-file: 'index'
 main-function: 'handler'
 variables:
-  - key
-  - foo
-  - another
+  - token
 methods:
   GET:
     status_codes:
       - 200 # Can only have one 2xx status code and it must be first in the list
-      - 400
-      - 401
-      - 404
-      - 500
   POST:
     status_codes:
       - 201 # Can only have one 2xx status code and it must be first in the list
@@ -22,6 +16,3 @@ methods:
       - 401
       - 404
       - 500
-  PUT:
-    status_codes:
-      - 204
