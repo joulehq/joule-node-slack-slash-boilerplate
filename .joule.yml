@@ -5,6 +5,8 @@ main-file: 'index'
 main-function: 'handler'
 variables:
   - token
+  - command
+  - text
 methods:
   GET:
     status_codes:
