@@ -15,6 +15,6 @@ exports.handler = function(event, context) {
         context.succeed("That's not a valid token, sir. " + process.env.token + ' --- ' + token);
     }
     
-    //context.succeed(text.split('').reverse().join(''));
-    context.succeed('why');
+    context.succeed(text.split('').reverse().join(''));
+    //context.succeed('why');
 };
