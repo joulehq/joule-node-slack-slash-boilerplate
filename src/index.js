@@ -12,7 +12,7 @@ exports.handler = function(event, context) {
     var command = event.command;
     var text = event.text;
     if(token !== process.env.token) {
-        echo "That's not a valid token, sir."
+        context.succeed("That's not a valid token, sir.");
     }
     
     context.succeed(text.split('').reverse().join(''));
