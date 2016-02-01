@@ -1,8 +1,5 @@
-language: 'nodejs' # nodejs or python
-environment: 'master'
-endpoint: 'joule'
-main-file: 'index'
-main-function: 'handler'
+version: 0.0.1
+language: 'nodejs'
 variables:
   - token
 methods:
